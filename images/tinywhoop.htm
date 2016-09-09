@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///Users/ekirkland/test_projects/TestWebsiteJS/tinywhoop.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link href="./tinywhoop_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./tinywhoop_files/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-right">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="file:///Users/ekirkland/test_projects/TestWebsiteJS/index.html">BRAND</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="file:///Users/ekirkland/test_projects/TestWebsiteJS/index.html"><span class="glyphicon-home"></span> Introduction</a>
+                    </li>
+                    <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="file:///Users/ekirkland/test_projects/TestWebsiteJS/tinywhoop.html#"><span class="glyphicon-picture"></span> Build Logs
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li class="active"><a href="file:///Users/ekirkland/test_projects/TestWebsiteJS/tinywhoop.html">Tiny Whoop</a></li>
+                          <li><a href="file:///Users/ekirkland/test_projects/TestWebsiteJS/twinstar.html">Twinstar II</a></li>
+                          <li><a href="file:///Users/ekirkland/test_projects/TestWebsiteJS/QAV210.html">QAV 210</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="file:///Users/ekirkland/test_projects/TestWebsiteJS/contact.html"><span class="glyphicon-envelope"></span> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container firstDiv">
+        <div class="row">
+            <h1 class="well">Tiny Whoop Build Log</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                    <ul class="list-unstyled">
+                        <li id="Materials">
+                            <h3>Materials</h3>
+                            <p>This is a very entry-level build, in that it is both affortable and easy to fly. Truly, the biggest cost will be a transmitter and device to view the video from. If you already own a pair of goggles and a transmitter that can bind to Spektrum devices, then you are ahead of the game. Below is a list of all of the items needed for this build. There is also a list of things that are not required, but that are nice to have. Links will be provided for the items.</p>
+                            <b>Required:</b>
+                            <ul>
+                                <li><a target="_blank" href="http://www.horizonhobby.com/category/radios/aircraft-radio-systems/aircraft-transmitters">Spektrum or Spektrum compatable transmitter</a></li>
+                                <li><a target="_blank" href="http://www.horizonhobby.com/category/cameras---fpv/fpv/fpv-headsets">Video receiver and display</a></li>
+                                <li><a target="_blank" href="http://www.horizonhobby.com/product/multirotor/multirotor-aircraft/bind-n-fly-15087--1/inductrix-bnf-blh8780">Inductrix BNF</a> (or <a target="_blank" href="http://www.horizonhobby.com/product/multirotor/multirotor-aircraft/ready-to-fly-15086--1/inductrix-rtf-blh8700">RTF</a> if you want to use the included transmitter)</li>
+                                <li><a target="_blank" href="http://www.getfpv.com/fx797t-micro-fpv-camera-5-8ghz-40ch-25mw-vtx.html">FX797T</a> or <a target="_blank" href="http://www.readymaderc.com/store/index.php?main_page=product_info&amp;cPath=11_30_33&amp;products_id=5415">RMRC Cricket</a> camera</li>
+                                <li><a target="_blank" href="https://www.amazon.com/Weller-8200PKS-120-volt-Universal-Soldering/dp/B002YDMZF4/ref=sr_1_2?ie=UTF8&amp;qid=1473450592&amp;sr=8-2&amp;keywords=solder+gun">Soldering gun</a> or <a target="_blank" href="https://www.amazon.com/Weller-WLC100-40-Watt-Soldering-Station/dp/B000AS28UC/ref=sr_1_7?ie=UTF8&amp;qid=1473450555&amp;sr=8-7&amp;keywords=solder+gun">iron</a></li>
+                            </ul>
+                            <b>Optional:</b>
+                            <ul>
+                                <li>Upgraded <a target="_blank" href="https://micro-motor-warehouse.com/collections/tinywhoop/products/cl-0615-19">motors</a></li>
+                                <li>Larger <a target="_blank" href="https://micro-motor-warehouse.com/collections/tinywhoop/products/mylipo-205mah">batteries</a></li>
+                                <li>3D-printed <a target="_blank" href="http://atmosphericadventures.com/3d-printed-accessories/camera-mount-for-the-inductrix-tiny-whoop">camera mount</a></li>
+                                <li>3D-printed <a target="_blank" href="http://pirofliprc.com/Tiny-Whoop-Inductrix-Case_p_3395.html">case</a></li>
+                            </ul>
+                        </li>
+                        <li id="Steps">
+                            <h3>Steps</h3>
+                            <b>Preparing the Inductrix</b>
+                            <p>The first step will be to prepare the Inductrix for the mounting of the camera. From the factory, the Inductrix comes with a thin, plastic cover. To remove this, undo the two sides where the cover slips onto two notches.<img src="./tinywhoop_files/tinywhoop2.jpg" style="display: block;"> After the cover has been removed, it should look like this. Be careful to not damage the antenna; it is the small copper wire on top of the PCB. If it gets in the way later in the build, just gently move it to the side.</p>
+                            <b>Adding the Camera</b>
+                            <p>Now, it is time to prepare the camera module. Using wire-cutters, cut off the camera power leads to about 1.5 inches. Then remove a small amount of the cover from the ends, and tin the wire. Also, tin the solder pads on the PCB as well. The pads that we will be using can be seen below. Be careful not to bridge these two points: this will cause a short in the entire system. <img src="./tinywhoop_files/tinywhoop3.jpg">Pay close attention to which pad is positive (<font color="red">red</font>) and which is negative (black). Once you have prepare both sides, it is time to solder them together. Solder positive to postive, and negative to negative.</p>
+                            <p>Now, the next step depends on whether you have the 3D-printed camera mount or not. If you do not, simply use double-sided foamtape to secure the camera to the center of the board, with the camera facing towards the front. Then wrap a small rubberband around the two notches that previously held the plastic cover on, wrapping it over the camera. The above picure shows this. If, however, you have the 3D-printed mount, then you will need to unscrew the front 3 screws of the PCB. With these undone, slide the mount into place, then reinstall the screws.</p>
+                            <b>Upgrading Motors (optional)</b>
+                            <p>If you are upgrading motors, then the first step will be to remove the stock ones. First, use pliers to remove the motor connectors from the PCB. This is on the underside of the Inductrix. Then, using a flathead screwdriver, apply pressure to the underside of the motor, sliding it up and out of its casing. <img src="./tinywhoop_files/tinywhoop4.jpg">Remove the propellor by leveraging a screwdriver between the propellor and the motor. Installing the new motors simply involves determining which ones are CCW and CW, and placing them accordingly. When sliding them back into the pods, slide them until the are flush with the top; do not press them down too far, as this will damage the wires on the bottom. Reinstall the propellors, and you're done!</p>
+                        </li>
+                        <li id="Tips">
+                            <h3>Tips</h3>
+                        </li>
+                    </ul>
+            </div>
+            <div class="col-md-3 col-md-offset-1 well hidden-xs hidden-sm">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="file:///Users/ekirkland/test_projects/TestWebsiteJS/tinywhoop.html#Materials">Materials</a>
+                    </li>
+                    <li>
+                        <a href="file:///Users/ekirkland/test_projects/TestWebsiteJS/tinywhoop.html#Steps">Steps</a>
+                    </li>
+                    <li>
+                        <a href="file:///Users/ekirkland/test_projects/TestWebsiteJS/tinywhoop.html#Tips">Tips</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./tinywhoop_files/jquery.min.js"></script>
+    <script src="./tinywhoop_files/bootstrap.min.js"></script>
+
+</body></html>
