@@ -7,7 +7,31 @@
 </head>
 
 <body>
-    <p>Is this working?!</p>
+    <nav class='navbar navbar-inverse navbar-fixed-top navbar-right'>
+        <div class='container'>
+            <div class='navbar-header'>
+                <a class='navbar-brand' href='#'>BRAND</a>
+            </div>
+            <ul class='nav navbar-nav'>
+                <li class='active'>
+                    <a href='#'>Item 1</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Item 2
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Item 2-1</a></li>
+                      <li><a href="#">Item 2-2</a></li>
+                      <li><a href="#">Item 2-3</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'>Item 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
