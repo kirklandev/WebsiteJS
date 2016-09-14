@@ -52,28 +52,40 @@
                             <h3>Materials</h3>
                             <b>Required:</b>
                             <ul>
-                                <li><a target="_blank" href="http://www3.towerhobbies.com/cgi-bin/wti0001p?&I=PXFUUS&P=FR&gclid=CI6LnvKZg88CFQIDaQodbyANTQ">Twinstar II frame</a></li>
-                                <li><a target="_blank" href="http://www.buddyrc.com/sunnysky-x2212-9-1400kv-ii.html">SunnySky X2212-1400kv</a> (2)</li>
-                                <li><a target="_blank" href="http://www.readymaderc.com/store/index.php?main_page=product_info&products_id=4035">12g MG Servo</a> (4)</li>
-                                <li><a target="_blank" href="http://www.hobbyking.com/hobbyking/store/__13429__HobbyKing_30A_BlueSeries_Brushless_Speed_Controller.htmll">30A ESC</a> (2)</li>
+                                <li><a target="_blank" href="http://www.getfpv.com/multi-rotor-frames/qav180-qav210-mini-fpv-quad/qav210-carbon-fiber-fpv-quadcopter.html">QAV 210 frame</a></li>
+                                <li><a target="_blank" href="http://www.getfpv.com/motors/dys-se2205-2300kv-brushless-motor-ccw.html">DYS SE2205-2300kv</a> (4)</li>
+                                <li><a target="_blank" href="https://www.racedayquads.com/products/littlebee-20a-pro-esc?utm_medium=cpc&utm_source=googlepla&variant=20675554183">20A LittleBee ESC</a> (4)</li>
+                                <li><a target="_blank" href="http://www.getfpv.com/diatone-power-hub-pdb-with-5v-12v-output.html">PDB</a></li>
                                 <li><a target="_blank" href="https://www.amazon.com/Weller-8200PKS-120-volt-Universal-Soldering/dp/B002YDMZF4/ref=sr_1_2?ie=UTF8&qid=1473450592&sr=8-2&keywords=solder+gun">Soldering gun</a> or <a target="_blank" href="https://www.amazon.com/Weller-WLC100-40-Watt-Soldering-Station/dp/B000AS28UC/ref=sr_1_7?ie=UTF8&qid=1473450555&sr=8-7&keywords=solder+gun">iron</a></li>
-                                <li><a target="_blank" href="https://www.amazon.com/Weller-8200PKS-120-volt-Universal-Soldering/dp/B002YDMZF4/ref=sr_1_2?ie=UTF8&qid=1473450592&sr=8-2&keywords=solder+gun">4000 mAh 3S Lipo</a></li>
+                                <li><a target="_blank" href="http://www.getfpv.com/flight-controllers/sp-racing-f3-flight-controller-deluxe.html">FC</a></li>
+                                <li><a target="_blank" href="http://www.getfpv.com/lumenier-1300mah-4s-60c-lipo-battery-xt60.html">1300 mAh 4S Lipo</a></li>
                             </ul>
                             <b>Optional:</b>
                             <ul>
-                                <li><a target="_blank" href="https://micro-motor-warehouse.com/collections/tinywhoop/products/cl-0615-19">FPV pod</a></li>
+                                <li><a target="_blank" href="http://www.getfpv.com/fpv/cameras/runcam-swift-600tvl-camera-26mmx26mm.html">FPV cam</a></li>
+                                <li><a target="_blank" href="http://www.getfpv.com/fpv/video-transmitters/lumenier-tx5g25c-mini-cased-25mw-5-8ghz-fpv-transmitter-with-raceband.html">FPV transmitter</a></li>
                             </ul>
                         </li>
                         <li id='Steps'>
                             <h3>Steps</h3>
+                            <b>Preparing the Frame</b>
+                            <p>Before mounting all of the components, it is important to first get a feel for the frame and how it fits together. Not only does this help with the planning of the build, but it ensures that the frame fits together properly and that no parts are missing. If the edges on the frame parts are sharp or rough, you can sand the edges. <font color="red">Wear a mask and sand the parts under a faucet of water.</font>The dust produced is extremely bad to inhale, so do this for your own production. The water helps to prevent the dust from floating in the air.</p>
+                            <b>Mounting Motors and ESCs</b>
+                            <p>Once the frame is prepared, it is time to ready the ESC's for mounting. To do this, we will first place them on the arms, about halfway between where the motor goes and the main body. Remove the heatshrink from all four ESC's, and desolder the three connections for the motor; we will directly solder the motor leads to the ESC pads. Mount the motors to the arms, using a small amount of loctite on the screws so that they do not unscrew during flight from the vibrations. With the motors positioned, measure the leads to where they meet the ESC, and then cut them there. Strip the tips, and pre-tin them, along with the pads. Then solder them. Use a servo tester to see if the motor spins in the correct direction. If they don't, then unsolder any two of the wires and swap them.</p>
+                            <p>Now it is time to provide power to the motors and ESC's. Mount the PDB on the frame using nylon standoffs, making sure it is not touching the carbon-fiber. Slide heatshrink onto the ESCs and heat them, covering the entire ESC. Use double-sided foam tape (preferably 3M) to secure the ESC to the arm. Then, position the ESC power leads on the PDB in the desired orientation, and cut them to size. Strip the tips and pretin them, along with the pads on the PDB. Next, solder them, applying enough heat to get a solid joint. The motors and ESC's are now installed!</p>
+                            <b>FPV Equipment</b>
+                            <p>If using FPV equipment, now is the most convenient time to install the necessary components. First, figure out the powering of the equipment. If you're using a camera with a high input voltage range, then you can typically power it directly off the battery voltage on the PDB. The same goes for the Vtx. Check the specs to ensure that your Vtx or camera does not specifically require 5V or 12V. The frame comes with nice sideplates that can be used to mount certain cameras, similar to the one linked in the materials section. The Vtx can be mounted on the back of the craft, with the antenna pointing out the back top. Check the power of this system before moving on to the next step.</p>
+                            <img src="images/QAV1.JPG" style='display: block;'>
+                            <b>FC Installation</b>
+                            <p>The final step is installing the flight controller. Using another set of standoffs, mount the controller above the PDB. Next, plug the ESC's into their respective positions on the FC. Refer to the instructions for your specific flight controller to determine the number system on the controller; there are many different ones. Once this is done, it's time to configure it; using a USB cable, connect it to a laptop or desktop running iOS or Windows. Download Cleanflight Configurator, and connect to it. In the GUI, there should be a 3D representation of the craft. Rotate it in your hand to ensure that the controller knows which side is the front and back. Once this is done, it is time to test fly!</p>
                         </li>
                         <li id='Tips'>
                             <h3>Tips</h3>
                             <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>Start off in auto-level mode</li>
+                                <li>Take it slow; flying in rate mode takes time and practice</li>
+                                <li>Buy extra props! You WILL break them</li>
+                                <li>Respect your batteries; don't over discharge them</li>
                             </ul>
                         </li>
                     </ul>
